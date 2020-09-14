@@ -1,0 +1,139 @@
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.chat-window {
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    background-color: #1B1F38;
+    display: flex;
+    z-index: 1;
+}
+
+.conversation-view {
+    width: 100%;
+    max-height: 600px;
+    overflow: scroll;
+    height: auto;
+    padding: 6px;
+    background-color: #1B1F38;
+}
+
+.message-box {
+    width: 100%;
+    /* padding: 8px; */
+    position: absolute;
+    bottom: 0;
+}
+
+.text-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    /* border: 2px solid #FC7500; */
+    overflow: hidden;
+}
+
+.input_button {
+    display: flex;
+    border: 2px solid #FC7500;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-bubble {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat-bubble2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat-bubble.ai {
+    justify-content: flex-end;
+}
+
+.chat-bubble.ai .chat-content {
+    background-color: #4c9689;
+}
+
+.chatBox {}
+
+.chat-content {
+    display: inline-block;
+    padding: 12px;
+    background-color: rgb(37, 44, 89);
+    /* margin-top: 1rem; */
+    color: white;
+    border-radius: 10px;
+    font-size: 8px;
+}
+
+.chat-content2 {
+    display: inline-block;
+    padding: 8px;
+    background-color: #FC7500;
+    color: white;
+    border-radius: 10px;
+    /* margin-top: 2.5rem; */
+    font-size: 8px;
+
+
+}
+
+.close-bot {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: 0.4s ease-in-out;
+}
+
+.close-bot:hover {
+    transform: scale(1);
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    /* left: 50%;
+    bottom: 50%; */
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-color: #FC7500;
+}
+
+.bar:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.bar:nth-child(2) {
+    transform: rotate(-45deg);
+}
